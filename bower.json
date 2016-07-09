@@ -1,0 +1,23 @@
+{
+  "name": "custom-validator-directive",
+  "authors": [
+    "Dev Team Inc."
+  ],
+  "description": "AngulaJS custom validator directive",
+  "main": "dist/custom-validator-directive.js",
+  "keywords": [
+    "angularJS",
+    "custom",
+    "validator",
+    "directive"
+  ],
+  "license": "MIT",
+  "homepage": "https://github.com/DevTeamHub/custom-validator-directive",
+  "repository": {
+  "type": "git",
+  "url": "https://github.com/DevTeamHub/custom-validator-directive"
+  },
+   "dependencies": {
+    "angular": ">=1.3.0-beta.10"
+  }
+}
