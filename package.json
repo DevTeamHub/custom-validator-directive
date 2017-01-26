@@ -1,5 +1,5 @@
 {
-  "version": "0.0.0",
+  "version": "1.0.0",
   "name": "custom-validator-directive",
   "author": "Dev Team Inc. <contact@dev-team.com> (http://dev-team.com)",
   "description": "AngularJS custom validator directive",

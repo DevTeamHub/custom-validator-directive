@@ -12,15 +12,16 @@ customValidatorModule.directive('dtCustom', dtCustomValidatorDirective);
 function dtCustomValidatorDirective() {
     return {
         scope: {
-            validate: "&dtCustom"
+            validate: '&dtCustom',
+            errorField: '@'
         },
-        restrict: "A",
-        require: "^ngModel",
+        restrict: 'A',
+        require: '^ngModel',
         link: function (scope, element, attributes, ctrl) {
 
             var promise = function (value) {
                 return scope.validate({ value: value }).then(function (result) {
-                    ctrl.$setValidity("custom", result.IsValid);
+                    ctrl.$setValidity(scope.errorField || 'custom', result.IsValid);
                     return value;
                 });
             };
@@ -29,7 +30,7 @@ function dtCustomValidatorDirective() {
                 if (!ctrl.$isEmpty(value)) {
                     ctrl.$promise = promise(value);
                 }
-                ctrl.$setValidity("custom", true);
+                ctrl.$setValidity(scope.errorField || 'custom', true);
                 return value;
             };
 
