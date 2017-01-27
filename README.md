@@ -2,6 +2,11 @@
 
 [![license](https://img.shields.io/github/license/mashape/apistatus.svg?maxAge=2592000)](http://opensource.org/licenses/MIT)
 
+## Useful links
+
+- [Confluence doc](http://confluence.dev-team.com/display/DOC/Custom+Validator+Directive)
+- [NPM](https://www.npmjs.com/package/custom-validator-directive)
+
 ## Requirements
 - Validation must happen inside `<form>` tag
 - Input must have `ng-model` specified for it
